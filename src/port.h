@@ -54,7 +54,7 @@ void homekit_overclock_end();
 // Use nvs of ESP32, See EEPROM.cpp for example
 
 // 1536 is enough, but require 4096 in compact_data() (for compatibility)
-#define HOMEKIT_STORAGE_SIZE     SPI_FLASH_SECTOR_SIZE
+#define HOMEKIT_STORAGE_SIZE     1984
 #define HOMEKIT_STORAGE_NVS_NAME "homekit"
 
 bool spiflash_init();
