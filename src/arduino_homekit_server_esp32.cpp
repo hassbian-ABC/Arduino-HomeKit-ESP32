@@ -2391,9 +2391,11 @@ void homekit_server_on_update_characteristics(client_context_t *context, const b
 
 		cJSON *j_ch = cJSON_GetArrayItem(characteristics, i);
 
+#if HOMEKIT_LOG_LEVEL >= HOMEKIT_LOG_DEBUG
 		char *s = cJSON_Print(j_ch);
 		CLIENT_DEBUG(context, "Processing element %s", s);
 		free(s);
+#endif
 
 		statuses[i] = process_characteristics_update(j_ch, context);
 
