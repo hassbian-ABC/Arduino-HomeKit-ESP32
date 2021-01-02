@@ -50,6 +50,12 @@ void watchdog_enable_all() {
 
 static uint32_t wdt_checkpoint;
 
+void watchdog_disable_all() {
+}
+
+void watchdog_enable_all() {
+}
+
 void watchdog_check_begin() {
 	wdt_checkpoint = millis();
 }
