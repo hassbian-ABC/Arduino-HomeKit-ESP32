@@ -5,6 +5,7 @@
 #include <WiFiServer.h>
 #include <WiFiClient.h>
 #include <string.h> //size_t
+#include <ESPmDNS.h>
 
 #ifdef __cplusplus
 extern "C" {
