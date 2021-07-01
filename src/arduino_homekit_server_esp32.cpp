@@ -2,7 +2,6 @@
 #include <Arduino.h>
 #include <esp_xpgm.h>
 #include <WiFi.h>
-#include <ESPmDNS.h>
 #include <WiFiServer.h>
 #include <WiFiClient.h>
 #include <lwip/sockets.h>
